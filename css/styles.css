@@ -1,0 +1,147 @@
+.navbar {
+	color: black;
+}
+.nav-link{
+	color: black;
+	font-weight: bold;
+	padding: 10px;
+}
+button.toggle i {
+	font-size: 30px;
+}
+.icons span{
+	font-size: 30px;
+}
+.icons a{
+	margin: 10px;
+	font-size: 40px;
+    text-decoration: none;
+}
+
+
+.search-bar{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.search-bar i {
+    font-weight: 900;
+    font-size: 30px;
+}
+.search-bar input{
+    width: 60%;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.search-bar input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: black;
+}
+.search-bar span{
+    position: absolute;
+    right: 33%;
+    top: 15px;
+}
+.search-bar .drp-dwn-btn{
+    width: 23rem;
+}
+.drp-dwn-btn{
+    position: relative;
+    border-bottom: 1px solid #dee2e6;
+}
+.dropdown-toggle::after{
+    position: absolute;
+    right: 20px;
+
+}
+.drp-dwn-btn:focus{
+    box-shadow: none;
+}
+.range-price{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    max-width: 80% !important;
+}
+.product-icons{
+    display: flex;
+    justify-content: space-between;
+}
+.product-icons i {
+    font-size: 15px;
+}
+.product-icons a{
+    color: black !important;
+}
+.product-icons a i{
+    font-size: 30px;
+}
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pagination li a{
+    border: none !important;
+    outline: none !important;
+    color: black !important;
+    font-size: 20px;
+}
+.pagination li a:active, .pagination li a:focus{
+    color: white !important;
+    background-color: black;
+    outline: none;
+    box-shadow: none;
+}
+.pagination li a:hover{
+    color: white !important;
+    background-color: rgb(77, 75, 75);
+}
+.form-range::-webkit-slider-thumb {
+  background: transparent;
+  border: 2px solid black;
+  height: 18px;
+  width: 18px;
+  position: relative;
+  top: -3px;
+}
+.form-range::-webkit-slider-thumb:active{
+    background-color: black !important;
+}
+.form-range::-webkit-slider-runnable-track{
+    height: 2px;
+}
+
+@media screen and (max-width: 1330px){
+    .search-bar .drp-dwn-btn{
+        width: 100%;
+        margin: 20px 5rem !important;
+    }
+    .search-bar input{
+        width: 70%;
+    }
+    .search-bar span{
+        right: 7rem;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .search-bar span{
+    display: none;
+    }
+    .search-bar{
+        justify-content: center;
+    }
+    .search-bar .drp-dwn-btn{
+        width: 100%;
+        margin: 20px 0rem !important;
+    }
+}
+
+@media screen and (max-width: 575px){
+    button.toggle {
+	display: none;
+    }
+}
